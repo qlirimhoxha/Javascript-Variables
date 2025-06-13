@@ -5,44 +5,25 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1>Operatoret e Krahasimit ne JavaScript</h1>
-
     <script>
         let a = 5;
-        let b = 8;
-        let c = 5;
+        let b = 10;
 
-        console.log("a =", a);
-        console.log("b =", b);
-        console.log("c =", c);
+        console.log("a = 5, b=10");
+        
+        // && - duhet te jen te duyja t verteta
+        console.log("(a > 0 && b > 0)=", (a > 0 && b > 0)); //T
+        console.log("(a > 0 && b > 5)=", (a > 0 && b < 5)); //F
 
-        // == Barazim
-        console.log("a == b:", a == b);
-        console.log("a == c:", a == c);
+        // || - mjafton qe njera te jet e vertet
+        console.log("(a > 0 || b < 5)=", (a > 0 || b < 5)); //T
+        console.log("(a < 0 || b < 5)=", (a < 0 || b < 5)); //F
 
-        // != jo i barabart
-         console.log("a != b:", a != b);
-
-         // > me i madh se
-          console.log("b > a:", b > a);
-
-          // < me i vogel se
-           console.log("a < b:", a < b);
-
-           //>= me i madh ose i barabart
-           console.log("a >= c:", a >= c);
-
-          //<= me i vogel ose i barabart
-          console.log("a <= b:", a <= b);
-
-          // == kontrollon vetem vleren, === kontrollon edhe tipin
-          let d = "5";
-          console.log("a == d:", a == d);
-          console.log("a === d:", a === d);
-
+        // ! - mohon vleren
+        console.log("!(a > 0)=", !(a > 0)); //F
+        console.log("!(b < 5)=", !(b < 5)); //T
     </script>
-
     
+
 </body>
 </html>
